@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-image: url(../img/Background_1920x1080_CZ.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-top: 0px;
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  padding-top: 20px;
+  padding-left: 40px;
+  color: #2F61A8;
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  padding-top: 0px;
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #2F61A8;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar header {
+  background-color: #2F61A8;
+  padding: 20px;
+}
+
+#sidebar header img {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+#sidebar .nav a{
+  text-decoration: none;
+  background: none;
+  border-bottom: 1px solid #2F61A8;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #162b48;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+form, .div-input {
+    flex: 0 0 auto;
+    width: 400px;
+    color: rgb(100, 100, 100);
+    display: flex;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+form, .div-input-name{
+    flex: 0 0 auto;
+    width: 300px;
+    color: rgb(100, 100, 100);
+    display: flex;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+form, .div-input-cpf{
+    flex: 0 0 auto;
+    width: 300px;
+    color: rgb(100, 100, 100);
+    display: flex;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+form, .div-input-masc{
+    color: rgb(100, 100, 100);
+    padding-top: 0px;
+    display: flex;
+    margin-bottom: 0px;
+}
+form, .div-input-femi{
+  color: rgb(100, 100, 100);
+  padding-top: 0px;
+  display: flex;
+  margin-bottom: 0px;
+}
+form, .div-input-senha{
+    width: 200px;
+    color: rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+form, .div-input-confirmsenha{
+  width: 200px;
+  color: rgb(100, 100, 100);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+button{
+  text-decoration: none;
+  width: 120px;
+  color: rgb(100, 100, 100);
+  height: 30px;
+  font-size: 12px;
+}
