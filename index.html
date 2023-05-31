@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="./css/style.css" />
+    <link rel="icon" href="./img/IconQualiti.png">
+
+    <title>Professor allocation - Home</title>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+      
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+      
+		</script>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <header>
+            <img src="../Home/img/LogoQualiti_br.png" alt="logo">
+          </header>
+          <ul class="nav">
+            <a href="../Home/index.html">
+                <i class="zmdi zmdi-view-dashboard"></i> HOME
+              </a>
+            <br>
+            <br>
+              <a href="../Course/index.html">
+                <i class="zmdi zmdi-widgets"></i> CURSO
+              </a>
+            <br>
+            <br>
+                <a href="../Departament/index.html">
+                  <i class="zmdi zmdi-widgets"></i> DEPARTAMENTO
+                </a>
+            <br>
+            <br>
+                  <a href="../Professor/index.html">
+                    <i class="zmdi zmdi-widgets"></i> PROFESSOR
+                  </a>
+            <br>
+            <br>
+                  <a href="../Allocation/index.html">
+                    <i class="zmdi zmdi-link"></i> ALOCAÇÃO
+                  </a>
+            <br>
+            <br>  
+                  <a href="../login/index.html">
+                    <i class="zmdi zmdi-link"></i> SAIR
+                  </a>
+          </ul>
+        </div>
+        <!-- Content -->
+<div class="container" style="color: #ffff;">
+  <br>
+  <br> 
+  <p>Bem-vindo(a)!</p>
+  <br>
+  <br>  
+  <br>
+  <br>
+  <br>
+  <div class="titulo" style="font-size: 26px; line-height: 20px;">
+    <h1>SOMOS A</h1>
+    <h1>QUALITI</h1>
+  </div>
+  <p>
+
+  </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="data">
+  <output id="data" style="color: #77ffd2; font-family: 'helvetica', 'avant garde'; font-size: 24px;"></output>
+</div>
+<div class="hora">
+  <output id="hora" style="color: #77ffd2; font-family: 'helvetica', 'avant garde'; font-size: 24px;"></output>				
+</div>			
+</BODY>
+<script>
+function atualizaRelogio(){ 
+  var momentoAtual = new Date();
+  
+  var vhora = momentoAtual.getHours();
+  var vminuto = momentoAtual.getMinutes();
+  var vsegundo = momentoAtual.getSeconds();
+  
+  var vdia = momentoAtual.getDate();
+  var vmes = momentoAtual.getMonth() + 1;
+  var vano = momentoAtual.getFullYear();
+  
+  if (vdia < 10){ vdia = "0" + vdia;}
+  if (vmes < 10){ vmes = "0" + vmes;}
+  if (vhora < 10){ vhora = "0" + vhora;}
+  if (vminuto < 10){ vminuto = "0" + vminuto;}
+  if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+  dataFormat = vdia + " / " + vmes + " / " + vano;
+  horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+  document.getElementById("data").innerHTML = dataFormat;
+  document.getElementById("hora").innerHTML = horaFormat;
+
+  setTimeout("atualizaRelogio()",1000);
+}
+</script>
